@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Reparto de Tareas &bull; Inicio</title> 
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1" /> 
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" type="text/css" href="jqm-datebox.min.css" /> 
+	<link rel="stylesheet" type="text/css" href="tareas.css" /> 	    
+    <script src="jquery-1.8.2.min.js"></script>
+	<script src="jquery.mobile-1.2.0.min.js"></script>	
+	<script type="text/javascript" src="jqm-datebox.core.min.js"></script>
+    <script type="text/javascript" src="jqm-datebox.mode.calbox.min.js"></script>
+    <script type="text/javascript" src="jquery.mobile.datebox.i18n.en_US.utf8.js"></script>    
+    <script type="text/javascript" src="fechas.js"></script>
+	<script type="text/javascript" src="rutinas.js"></script>
+	<script type="text/javascript" src="index.js"></script>	
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div id="header" data-role="header">
+		
+		<h1>Reparto de Tareas</h1>		
+		<a href="configuracion.html" data-ajax="false" data-role="button" data-icon="gear">Configuraci&oacute;n</a>
+	</div>
+
+	<div id="contenido" data-role="content">			
+	
+		<div class="ui-body ui-body-a">
+			<h3><div id="semana"></div></h3>					
+		</div>		
+										
+		<div id="resultado" class="ui-grid-a"></div>		
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><button type="button" id="anterior" data-theme="a" data-icon="arrow-l">Anterior</button></div>
+			<div class="ui-block-b"><button type="button" id="siguiente" data-theme="a" data-icon="arrow-r" data-iconpos="right">Siguiente</button></div>	   
+		</fieldset>	
+	   
+	    <button type="button" id="seleccionar" data-theme="c" data-corners="false" data-icon="grid">Seleccionar Semana</button>	    
+		<div class="ui-body">		
+		<input id="selsemana" type="date" data-role="datebox"
+		 data-options='{"mode": "calbox", "calShowWeek": true, "overrideCalStartDay": 1, "calWeekHigh":true, "overrideDateFormat":"%d/%m/%Y", "hideInput": "true"}'>
+		 </div>	 			
+	</div><!-- /content -->
+	
+	<div id="footer" data-role="footer">
+		<p class="ui-title">JCA &bull; 2012</p>
+	</div><!-- /header -->	
+	
+</div><!-- /page -->
+
+</body>
+</html>

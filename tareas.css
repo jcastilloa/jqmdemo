@@ -1,0 +1,13 @@
+#resultado .ui-bar-c {
+	text-align:right;
+}
+#resultado .ui-bar-c, #resultado .ui-bar-e {
+	font-size: 1.7em;
+}
+#contenido input {
+	font-size: 1.2em;
+}
+
+#oculto {
+display:none;
+}

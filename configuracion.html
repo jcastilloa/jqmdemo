@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Reparto de Tareas &bull; Configuraci&oacute;n</title> 
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1" /> 	
+	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" type="text/css" href="tareas.css" />
+    <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.2.0.min.js"></script>
+	<script type="text/javascript" src="rutinas.js"></script>
+	<script type="text/javascript" src="configuracion.js"></script>
+    
+</head> 
+<body> 
+
+<div data-role="page">
+	
+	<div id="header" data-role="header">
+		<a href="index.html" data-icon="home"  data-role="button" data-ajax="false">Inicio</a>
+		<h1>Reparto de Tareas &bull; Configuraci&oacute;n</h1>
+		<a id="btnguardartodo" href="#"  data-role="button" data-icon="save" data-ajax="false">Guardar</a>	
+	</div><!-- /header -->	
+
+	<div id="contenido" data-role="content">	
+	
+	<div data-role="collapsible" data-collapsed="false" data-theme="a" data-content-theme="a">
+     <h3>Compa&ntilde;eros de piso</h3>
+     <form class="ui-body ui-body-a ui-corner-all" onsubmit="return proteger()">
+			<p><input id="btnagregar" data-inline="true" type="button" value="Agregar" class="ui-btn-hidden" data-disabled="false" data-theme="e" 
+			></input><strong>Introduzca la lista de compa&ntilde;eros de piso</strong>. Para eliminar algún compañero de la lista, simplemente deje vacío el campo.</p>
+			<fieldset id="lista_personas">			
+			</fieldset>					
+		
+	</form>		
+   </div>
+	
+	<div data-role="collapsible" data-theme="a" data-content-theme="a">
+    <h3>Lista de Tareas</h3>
+		<form class="ui-body ui-body-a ui-corner-all" onsubmit="return proteger()">
+			<p><input id="btnagregartarea" data-inline="true" type="button" value="Agregar" class="ui-btn-hidden" data-disabled="false" data-theme="e" 
+			></input><strong>Introduzca la lista de tareas a realizar</strong>. Para eliminar alguna tarea de la lista, simplemente deje vacío el campo.</p>
+			<fieldset id="lista_tareas">			
+			</fieldset>				
+		
+		</form>	
+   </div>
+			
+		<br />			
+	</div><!-- /content -->
+	
+
+		
+	<div id="footer" data-role="footer">	
+		
+		<h4>JCA &bull; 2012</h4>
+	</div><!-- /header -->	
+	
+</div><!-- /page -->
+
+</body>
+</html>
